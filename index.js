@@ -49,7 +49,7 @@ bot.on("message_create", async (message) => {
 
         console.log("p")
         await bot.sendMessage(message.from, sticker, { sendMediaAsSticker: true });
-        await bot.sendMessage(message.to, "Enjoy your sticker!");
+        await bot.sendMessage(message.from, "Enjoy your sticker!");
       } else {
         await message.reply("Please send an image file.");
       }
